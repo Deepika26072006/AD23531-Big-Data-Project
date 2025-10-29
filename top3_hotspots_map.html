@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67687fc97488a37d83ce1cf5465bf5ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_67687fc97488a37d83ce1cf5465bf5ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67687fc97488a37d83ce1cf5465bf5ae = L.map(
+                "map_67687fc97488a37d83ce1cf5465bf5ae",
+                {
+                    center: [21.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb121600eddfa81ba819d651fb949274 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb121600eddfa81ba819d651fb949274.addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var circle_marker_af4c6d0a5b91fbf3a05b52e222bef951 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_f8462bd536a6205b5f7144bc08f63a97 = L.marker(
+                [12.9916, 77.5946],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_6dcd10fedcefff1d66fa226350a0c262 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FF0000;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Bengaluru: 81\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_f8462bd536a6205b5f7144bc08f63a97.setIcon(div_icon_6dcd10fedcefff1d66fa226350a0c262);
+            
+    
+            var circle_marker_8b18b7618234b908bf0e77e1b96e9be4 = L.circleMarker(
+                [12.9816, 77.6046],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_1273fccef29c2c9a55430078d5b8be70 = L.marker(
+                [13.0016, 77.6046],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_bf2a452f599b8b991e16004ee40738f0 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FF0000;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Bengaluru: 80\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_1273fccef29c2c9a55430078d5b8be70.setIcon(div_icon_bf2a452f599b8b991e16004ee40738f0);
+            
+    
+            var circle_marker_3865db9e0de90455c3551f303df0b79d = L.circleMarker(
+                [12.9816, 77.5846],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_84cedbb4ead42f9c9c79760d90688a69 = L.marker(
+                [13.0016, 77.5846],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_90bea3061c7903455d18c98f16707ab3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FF0000;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Bengaluru: 79\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_84cedbb4ead42f9c9c79760d90688a69.setIcon(div_icon_90bea3061c7903455d18c98f16707ab3);
+            
+    
+            var circle_marker_1e65f6e4df1e14a0c1e30c11f467044e = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "#FFA500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_20ad7fcca01e53d9fa78bb2d3b46453d = L.marker(
+                [13.1027, 80.2707],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_4ebce62ee51376503cae2a93fd0bf5e9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFA500;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Chennai: 60\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_20ad7fcca01e53d9fa78bb2d3b46453d.setIcon(div_icon_4ebce62ee51376503cae2a93fd0bf5e9);
+            
+    
+            var circle_marker_3890986c2e8bb12f4b29ab7d2afc8b48 = L.circleMarker(
+                [13.0927, 80.28070000000001],
+                {"bubblingMouseEvents": true, "color": "#FFA500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_d5b5bf8b1fdf4fcfd967e890b783d9ff = L.marker(
+                [13.1127, 80.28070000000001],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_0068d8133e26ecb486b688325355b79b = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFA500;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Chennai: 59\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_d5b5bf8b1fdf4fcfd967e890b783d9ff.setIcon(div_icon_0068d8133e26ecb486b688325355b79b);
+            
+    
+            var circle_marker_f06e09ea2815c95a9b3ddadccc855fc5 = L.circleMarker(
+                [13.0927, 80.2607],
+                {"bubblingMouseEvents": true, "color": "#FFA500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_cf216368ff8d434685e6a7f696291b36 = L.marker(
+                [13.1127, 80.2607],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_f8bfd7c575f081af490fe2c32b8a7b1b = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFA500;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Chennai: 59\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_cf216368ff8d434685e6a7f696291b36.setIcon(div_icon_f8bfd7c575f081af490fe2c32b8a7b1b);
+            
+    
+            var circle_marker_67ff9e3b6dfada3fea34372975f067d6 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_9aadeb954800adb0bb8a86c891ccbadc = L.marker(
+                [28.6339, 77.209],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_f7ade3416147b5b9951bfc120bef39aa = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFFF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Delhi: 64\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_9aadeb954800adb0bb8a86c891ccbadc.setIcon(div_icon_f7ade3416147b5b9951bfc120bef39aa);
+            
+    
+            var circle_marker_2604db246fc3b88a3bce59108fd838bf = L.circleMarker(
+                [28.623900000000003, 77.21900000000001],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_d3d25738dcdc4108a85d8e4e5f40c8d6 = L.marker(
+                [28.643900000000002, 77.21900000000001],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_abaea954b43162e11f3345c6d4ba5a2d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFFF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Delhi: 63\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_d3d25738dcdc4108a85d8e4e5f40c8d6.setIcon(div_icon_abaea954b43162e11f3345c6d4ba5a2d);
+            
+    
+            var circle_marker_2d381e45becc845f80da2f7a8aec00c7 = L.circleMarker(
+                [28.623900000000003, 77.199],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_38f63307652afcd1cb277a1ffd1bb083 = L.marker(
+                [28.643900000000002, 77.199],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_2cd525a7617fc6c222e05acfcba2e908 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#FFFF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Delhi: 57\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_38f63307652afcd1cb277a1ffd1bb083.setIcon(div_icon_2cd525a7617fc6c222e05acfcba2e908);
+            
+    
+            var circle_marker_9bc81ef35e04139e946c86091b37d4b1 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "#00FF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_4c764de0606d70ccdc17105405069ea3 = L.marker(
+                [17.405, 78.4867],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_9f3fc3cf469ec9ca10af718eb69f5df8 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#00FF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Hyderabad: 34\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_4c764de0606d70ccdc17105405069ea3.setIcon(div_icon_9f3fc3cf469ec9ca10af718eb69f5df8);
+            
+    
+            var circle_marker_7a1630416fab5b5248fbfac0655468c4 = L.circleMarker(
+                [17.395000000000003, 78.4967],
+                {"bubblingMouseEvents": true, "color": "#00FF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_048c6c8187fcfa2be4e3d5de38679041 = L.marker(
+                [17.415000000000003, 78.4967],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_094a810ec10872d02d478a992a2dc7a2 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#00FF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Hyderabad: 34\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_048c6c8187fcfa2be4e3d5de38679041.setIcon(div_icon_094a810ec10872d02d478a992a2dc7a2);
+            
+    
+            var circle_marker_fc5953a911bafa304c051ddf66f5cdd7 = L.circleMarker(
+                [17.395000000000003, 78.4767],
+                {"bubblingMouseEvents": true, "color": "#00FF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_2c777f946a07158ef0a7135ac554c383 = L.marker(
+                [17.415000000000003, 78.4767],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_75355c58192be76c55522016299f5988 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#00FF00;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Hyderabad: 34\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_2c777f946a07158ef0a7135ac554c383.setIcon(div_icon_75355c58192be76c55522016299f5988);
+            
+    
+            var circle_marker_53c056460b32b04bd7333d46161cb5d7 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "#1E90FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1E90FF", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_42724eb4a99a4d848859c97674534aa9 = L.marker(
+                [19.096, 72.8777],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_4d0e89691674b8f32dce405da29838a4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#1E90FF;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Mumbai: 65\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_42724eb4a99a4d848859c97674534aa9.setIcon(div_icon_4d0e89691674b8f32dce405da29838a4);
+            
+    
+            var circle_marker_a6a575f468f90453c7d53e198499f993 = L.circleMarker(
+                [19.086000000000002, 72.88770000000001],
+                {"bubblingMouseEvents": true, "color": "#1E90FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1E90FF", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_ed008caafc9498ba94f7feb57e42ff96 = L.marker(
+                [19.106, 72.88770000000001],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_266f3b163e10d2f9c0d8bcb1f01bfe00 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#1E90FF;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Mumbai: 60\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_ed008caafc9498ba94f7feb57e42ff96.setIcon(div_icon_266f3b163e10d2f9c0d8bcb1f01bfe00);
+            
+    
+            var circle_marker_72733df38bf4b50a17509b4e374c4d5f = L.circleMarker(
+                [19.086000000000002, 72.8677],
+                {"bubblingMouseEvents": true, "color": "#1E90FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1E90FF", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var marker_54b5bf93d92d562f4e3fe36f7bbf1c52 = L.marker(
+                [19.106, 72.8677],
+                {
+}
+            ).addTo(map_67687fc97488a37d83ce1cf5465bf5ae);
+        
+    
+            var div_icon_a0c2de59a8721fd941aa4bbbe048e081 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    font-size: 13px;\n                    color:#1E90FF;\n                    font-weight:bold;\n                    text-shadow:1px 1px 2px black;\n                    text-align:center;\n                \"\u003e\n                    Mumbai: 57\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_54b5bf93d92d562f4e3fe36f7bbf1c52.setIcon(div_icon_a0c2de59a8721fd941aa4bbbe048e081);
+            
+</script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            letter-spacing: 1px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin: 30px 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            text-align: center;
+            margin: 0 0 15px 0;
+            padding: 15px;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            color: white;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        iframe, canvas, img {
+            width: 100%;
+            border-radius: 12px;
+            border: none;
+            background-color: #fefefe;
+            box-sizing: border-box;
+            height: 400px; /* Equal height for all cards */
+        }
+
+        canvas, img {
+            object-fit: contain;
+        }
+
+        @media (max-width: 600px) {
+            iframe, canvas, img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>Crime Dashboard</header>
+
+<!-- Row 1 – Maps -->
+<div class="row">
+    <div class="card">
+        <h2>City Crime Summary</h2>
+        <iframe src="city_crime_map_final.html"></iframe>
+    </div>
+
+    <div class="card">
+        <h2>Top 20 Hotspots</h2>
+        <iframe src="top20_hotspots_map.html"></iframe>
+    </div>
+
+    <div class="card">
+        <h2>Top 3 Spots per City</h2>
+        <iframe src="top3_hotspots_map.html"></iframe>
+    </div>
+</div>
+
+<!-- Row 2 – Charts -->
+<div class="row">
+    <div class="card">
+        <h2>Crime Distribution by City</h2>
+        <canvas id="cityCrimePie"></canvas>
+    </div>
+
+    <div class="card">
+        <h2>Prediction: Actual vs Predicted Crimes</h2>
+        <img src="crime_prediction_plot.png" alt="Crime Predictions">
+    </div>
+</div>
+
+<script>
+const ctx = document.getElementById('cityCrimePie');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["Bengaluru","Chennai","Delhi","Hyderabad","Mumbai"],
+        datasets: [{
+            label: 'Total Crimes',
+            data: [60299,40066,40150,19792,39693],
+            backgroundColor: [
+                '#e74c3c',
+                '#3498db',
+                '#f1c40f',
+                '#2ecc71',
+                '#9b59b6'
+            ],
+            borderColor: '#fff',
+            borderWidth: 2,
+            radius: '80%'
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: { color: '#2c3e50', font: { size: 14 }, usePointStyle: true }
+            },
+            title: {
+                display: true,
+                text: 'Crime Distribution by City',
+                color: '#2c3e50',
+                font: { size: 18 }
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>
+
